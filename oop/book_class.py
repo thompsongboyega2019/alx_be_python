@@ -10,7 +10,7 @@ class Book:
 
     # The __str__ method
     def __str__(self):
-        return f"{self.title} by {self.author}, published in the year {self.year}"
+        return f"{self.title} by {self.author}, published in {self.year}"
 
     # The __repr__ method
     def __repr__(self):
