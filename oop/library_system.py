@@ -12,7 +12,7 @@ class EBook(Book):
         pass
 
 # PrintBook subclass
-class PrintBook(EBook):
+class PrintBook(Book):
     def __init__(self, title, author, page_count:int):
         super().__init__(title, author)
         self.page_count = page_count
@@ -20,8 +20,8 @@ class PrintBook(EBook):
 
 # Library Class
 class Library:
-    def __init__(self, books:list):
-        self.books = books
+    def __init__(self):
+        self.books = []
 
     # Add book method
     def add_book(self, book):
@@ -30,3 +30,4 @@ class Library:
     # List books
     def list_books(self):
         for book in self.books:
+            print(book)
