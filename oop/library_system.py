@@ -16,7 +16,7 @@ class EBook(Book):
         pass
 
     def __str__(self):
-        return f"EBook: {self.title} by {self.author}, File Size: {self.file_size}"
+        return f"EBook: {self.title} by {self.author}, File Size: {self.file_size}KB"
 
 # PrintBook subclass
 class PrintBook(Book):
